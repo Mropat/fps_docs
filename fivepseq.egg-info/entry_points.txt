@@ -1,0 +1,3 @@
+[console_scripts]
+fivepseq = fivepseq.__main__:main
+

@@ -1,0 +1,10 @@
+bokeh
+colorlover
+dill
+logging
+numpy
+pandas
+pathlib2
+plastid
+preconditions
+pysam

@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: fivepseq
+Version: 0.3.2
+Summary: A package for analysis of 5pseq datasets
+Home-page: http://github.com/lilit-nersisyan/fivepseq
+Author: Lilit Nersisyan, Maryia Ropat
+Author-email: lilit.nersisyan@ki.se
+License: BSD 3-Clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Free for non-commercial useLicense :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
