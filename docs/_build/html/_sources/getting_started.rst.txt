@@ -1,14 +1,18 @@
 .. _getting_started:
 
-
-
-
-
 ***************
 Getting started
 ***************
 
-.. _installing-docdir:
+
+Installing dependencies
+=============================
+
+Fivepseq requires following dependencies::
+
+  $sudo pip install scipy cython numpy plastid pandas bokeh pysam sympy
+
+
 
 Installing fivepseq
 =============================
@@ -17,13 +21,19 @@ To download latest fivepseq build, `clone the fivepseq repository <https://githu
 
 
 
-  git clone https://github.com/lilit-nersisyan/fivepseq.git
+  $git clone https://github.com/lilit-nersisyan/fivepseq.git
 
 
-Installing dependencies
------------------
 
-Fivepseq requires following dependencies::
+After you have fetched the newest version, you can either install the library::
 
-  sudo pip install scipy cython numpy plastid pandas bokeh pysam etc
+
+  $python setup.py install
+
+Or build fivepseq locally ::
+
+  $python setup.py build
+
+
+
 

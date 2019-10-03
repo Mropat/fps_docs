@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Getting started &#8212; fivepseq  documentation</title>
+    <title>Preparing data for fivepseq analysis &#8212; fivepseq  documentation</title>
     <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -16,8 +16,8 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Preparing data for fivepseq analysis" href="preparing_data.html" />
-    <link rel="prev" title="Welcome to fivepseq’s documentation!" href="index.html" /> 
+    <link rel="next" title="Fivepseq usage" href="usage_fivepseq.html" />
+    <link rel="prev" title="Getting started" href="getting_started.html" /> 
   </head><body>
 
 <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
@@ -31,10 +31,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="preparing_data.html" title="Preparing data for fivepseq analysis"
+          <a href="usage_fivepseq.html" title="Fivepseq usage"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Welcome to fivepseq’s documentation!"
+          <a href="getting_started.html" title="Getting started"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">home</a>|&nbsp;</li>
         <li><a href="search.html">search</a>|&nbsp;</li>
@@ -46,23 +46,22 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Getting started</a><ul>
-<li><a class="reference internal" href="#installing-dependencies">Installing dependencies</a></li>
-<li><a class="reference internal" href="#installing-fivepseq">Installing fivepseq</a></li>
+<li><a class="reference internal" href="#">Preparing data for fivepseq analysis</a><ul>
+<li><a class="reference internal" href="#required-files">Required files</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Welcome to fivepseq’s documentation!</a></p>
+  <p class="topless"><a href="getting_started.html"
+                        title="previous chapter">Getting started</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="preparing_data.html"
-                        title="next chapter">Preparing data for fivepseq analysis</a></p>
+  <p class="topless"><a href="usage_fivepseq.html"
+                        title="next chapter">Fivepseq usage</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/getting_started.rst.txt"
+      <li><a href="_sources/preparing_data.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -86,29 +85,17 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="getting-started">
-<span id="id1"></span><h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="installing-dependencies">
-<h2>Installing dependencies<a class="headerlink" href="#installing-dependencies" title="Permalink to this headline">¶</a></h2>
-<p>Fivepseq requires following dependencies:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$sudo pip install scipy cython numpy plastid pandas bokeh pysam sympy
-</pre></div>
-</div>
-</div>
-<div class="section" id="installing-fivepseq">
-<h2>Installing fivepseq<a class="headerlink" href="#installing-fivepseq" title="Permalink to this headline">¶</a></h2>
-<p>To download latest fivepseq build, <a class="reference external" href="https://github.com/lilit-nersisyan/fivepseq.git">clone the fivepseq repository</a></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$git clone https://github.com/lilit-nersisyan/fivepseq.git
-</pre></div>
-</div>
-<p>After you have fetched the newest version, you can either install the library:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$python setup.py install
-</pre></div>
-</div>
-<p>Or build fivepseq locally</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$python setup.py build
-</pre></div>
-</div>
+  <div class="section" id="preparing-data-for-fivepseq-analysis">
+<span id="preparing-data"></span><h1>Preparing data for fivepseq analysis<a class="headerlink" href="#preparing-data-for-fivepseq-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="required-files">
+<h2>Required files<a class="headerlink" href="#required-files" title="Permalink to this headline">¶</a></h2>
+<p>In order to run fivepseq, the following is required:</p>
+<ul class="simple">
+<li>Genomic sequence file (fasta)</li>
+<li>Genomic annotation file (gff)</li>
+<li>Aligned data (bam)</li>
+<li>Alignment index (bai)</li>
+</ul>
 </div>
 </div>
 
@@ -125,10 +112,10 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="preparing_data.html" title="Preparing data for fivepseq analysis"
+          <a href="usage_fivepseq.html" title="Fivepseq usage"
              >next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Welcome to fivepseq’s documentation!"
+          <a href="getting_started.html" title="Getting started"
              >previous</a> |</li>
         <li><a href="index.html">home</a>|&nbsp;</li>
         <li><a href="search.html">search</a>|&nbsp;</li>
