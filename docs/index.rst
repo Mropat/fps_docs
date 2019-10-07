@@ -1,24 +1,22 @@
-.. fivepseq documentation master file, created by
-   sphinx-quickstart on Mon Aug 12 10:48:06 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
-Welcome to fivepseq documentation!
+Welcome!
 ====================================
 
 
-Contents:
--------------
+This is a documentation page for **fivepseq**, a specialized analytical software for 5PSeq data interpretation and visualization, written in **Python 2**.
+Currently, fivepseq and its respective data pre-processing pipeline are designed to be run in Linux environment.
 
+ 
 .. toctree::
-   :maxdepth: 2
+   :hidden:
+   :maxdepth: 5
 
-   getting_started.rst
-   preparing_data.rst
-   usage_fivepseq.rst
-   interpreting_output.rst
-   advanced.rst
-   citing.rst
+   getting_started
+   Preparing Data </preparing_data>
+   usage_fivepseq
+   interpreting_output
+   advanced
+   citing
 
 
 

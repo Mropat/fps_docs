@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Fivepseq usage &#8212; fivepseq  documentation</title>
-    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
@@ -17,88 +17,35 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Output interpretation" href="interpreting_output.html" />
-    <link rel="prev" title="Preparing data for fivepseq analysis" href="preparing_data.html" /> 
+    <link rel="prev" title="Preparing Data" href="preparing_data.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
   </head><body>
-
-<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<img src="./_static/fivepseq_logo.jpg">
-</div>
-
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="interpreting_output.html" title="Output interpretation"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="preparing_data.html" title="Preparing data for fivepseq analysis"
-             accesskey="P">previous</a> |</li>
-        <li><a href="index.html">home</a>|&nbsp;</li>
-        <li><a href="search.html">search</a>|&nbsp;</li>
- 
-      </ul>
-    </div>
-
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Fivepseq usage</a><ul>
-<li><a class="reference internal" href="#core-command-line-arguments">Core command line arguments</a></li>
-<li><a class="reference internal" href="#optional-arguments">Optional arguments</a></li>
-</ul>
-</li>
-</ul>
-
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="preparing_data.html"
-                        title="previous chapter">Preparing data for fivepseq analysis</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="interpreting_output.html"
-                        title="next chapter">Output interpretation</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/usage_fivepseq.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
+  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="fivepseq-usage">
 <span id="usage-fivepseq"></span><h1>Fivepseq usage<a class="headerlink" href="#fivepseq-usage" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="core-command-line-arguments">
-<h2>Core command line arguments<a class="headerlink" href="#core-command-line-arguments" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="command-line-arguments">
+<h2>Command line arguments<a class="headerlink" href="#command-line-arguments" title="Permalink to this headline">¶</a></h2>
 <p>These are the arguments to be provided:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fivepseq</span> \
-<span class="o">-</span><span class="n">g</span> <span class="n">path_to_your_genome_fasta</span> \
-<span class="o">-</span><span class="n">a</span> <span class="n">path_to_your_annotation_gff</span> <span class="p">(</span><span class="n">sorry</span> <span class="n">no</span> <span class="n">gtf</span> <span class="k">for</span> <span class="n">now</span><span class="p">)</span> \
-<span class="o">-</span><span class="n">b</span> <span class="n">path_to_one_or_many_bam_files</span>
-    <span class="p">(</span><span class="n">multiple</span> <span class="n">files</span> <span class="n">provided</span> <span class="k">with</span> <span class="n">pattern</span> <span class="p">(</span><span class="s2">&quot;parent_dir/*.bam&quot;</span><span class="p">)</span> <span class="n">within</span> <span class="n">brackets</span><span class="p">)</span> \
-<span class="o">-</span><span class="n">o</span> <span class="n">output_directory</span> \
-<span class="o">-</span><span class="n">t</span> <span class="n">title_of_the_run</span> \
-<span class="p">[</span><span class="n">optional</span> <span class="n">arguments</span><span class="p">]</span> \
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>fivepseq <span class="se">\</span>
+-g &lt;path_to_genome_fasta&gt; <span class="se">\</span>
+-a &lt;path_to_annotation&gt; <span class="se">\</span>
+-b &lt;path_to_bam_file<span class="o">(</span>s<span class="o">)</span> <span class="se">\ </span> <span class="c1">#(multiple files provided with pattern (&quot;parent_dir/*.bam&quot;))</span>
+-o &lt;output_directory&gt; <span class="se">\</span>
+-t &lt;title_of_the_run&gt; <span class="se">\</span>
+<span class="o">[</span>optional arguments<span class="o">]</span>
 </pre></div>
 </div>
 </div>
@@ -106,10 +53,10 @@
 <h2>Optional arguments<a class="headerlink" href="#optional-arguments" title="Permalink to this headline">¶</a></h2>
 <p><strong>Conflict</strong></p>
 <p>The conflict mode specifies how to deal with files/folders that already exist:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">conflict</span>
-    <span class="n">default</span><span class="p">:</span> <span class="n">add</span> <span class="o">-</span> <span class="n">only</span> <span class="n">adds</span> <span class="n">missing</span> <span class="n">files</span> <span class="n">to</span> <span class="n">existing</span> <span class="n">directory</span>
-    <span class="n">overwrite</span> <span class="o">-</span> <span class="n">overwrites</span> <span class="nb">all</span> <span class="n">the</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">existing</span> <span class="p">(</span><span class="ow">in</span> <span class="n">case</span><span class="p">)</span> <span class="n">output</span> <span class="n">directory</span>
-    <span class="n">alt_dir</span> <span class="o">-</span> <span class="n">uses</span> <span class="n">alternative</span> <span class="n">directory</span> <span class="n">by</span> <span class="n">appending</span> <span class="s1">&#39;+&#39;</span> <span class="n">suffix</span> <span class="n">to</span> <span class="n">existing</span> <span class="p">(</span><span class="ow">in</span> <span class="n">case</span><span class="p">)</span> <span class="n">output</span> <span class="n">directory</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>--conflict
+    default: add - only adds missing files to existing directory
+    overwrite - overwrites all the files in the existing <span class="o">(</span>in <span class="k">case</span><span class="o">)</span> output directory
+    alt_dir - uses alternative directory by appending <span class="s1">&#39;+&#39;</span> suffix to existing <span class="o">(</span>in <span class="k">case</span><span class="o">)</span> output directory
 </pre></div>
 </div>
 <div class="line-block">
@@ -117,14 +64,14 @@
 </div>
 <p><strong>Outlier downsampling</strong></p>
 <p>Set p value threshold for outlier detection: counts with less than the [–op] probability of falling into Poisson distribution will be down-sampled.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">op</span>
-    <span class="n">default</span><span class="p">:</span> <span class="mi">0</span>
-    <span class="o">-</span><span class="mi">1</span> <span class="o">-</span> <span class="n">turn</span> <span class="n">off</span> <span class="n">downsampling</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>--op
+    default: <span class="m">0</span>
+    -1 - turn off downsampling
 </pre></div>
 </div>
-<p>Alternatively, set constant threshold for count down-sampling. Instead of outlier detection, values larger than this constant will be down-sampled.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">ds</span>
-    <span class="n">default</span><span class="p">:</span> <span class="kc">None</span>
+<p>Alternatively, set constant threshold for read count down-sampling. Instead of outlier detection, values larger than this constant will be down-sampled.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>--ds
+    default: None
 </pre></div>
 </div>
 <div class="line-block">
@@ -134,8 +81,8 @@
 <p>Supply a text file with newline-separated list of gene ids you’d like to filter/use.
 The names should correspond to those present under the gene_id tag in the gff file.
 Note: only these genes will be used in all the calculations.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">gf</span><span class="o">/-</span><span class="n">genefilter</span>
-    <span class="n">default</span><span class="p">:</span> <span class="kc">None</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>-gf/-genefilter
+    default: None
 </pre></div>
 </div>
 <div class="line-block">
@@ -151,35 +98,13 @@ Supply a tab separated text file, with the following structure:</p>
 <p>Note, the gene_attribute is the attribute name in the gtf or gff file.
 In case of gff, the attribute in the cds feature will be considered.
 With this option, fivepseq will generate a separate plotting directory called genesets, with tabbed-plots to either compare samples for each geneset, or genesets for each sample. The counts folder will also be divided according to the geneset used. The default folder will be named protein_coding.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">gs</span><span class="o">/-</span><span class="n">geneset</span>
-    <span class="n">default</span><span class="p">:</span> <span class="kc">None</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>-gs/-geneset
+    default: None
 </pre></div>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
-</div>
-<p><strong>Loci coordinates</strong> (beta)</p>
-<p>This option requires a file with coordinates of the loci (e.g. RBP binding coordinates), relative to which, the user wants to generate scatter-plots.
-The file should be tab-separated, with the following structure:</p>
-<blockquote>
-<div><p>Columns: chr-&gt;str-&gt;start-&gt;end-&gt;symbol</p>
-<p>Rows: the chromosome name, strand (+ or -), start and end coordinates and the name of the RBP (or the locus).</p>
-</div></blockquote>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">loci</span><span class="o">-</span><span class="n">file</span>
-    <span class="n">default</span><span class="p">:</span> <span class="kc">None</span>
-</pre></div>
-</div>
-<dl class="docutils">
-<dt>Four different output plots will correspond to reads located in:</dt>
-<dd><ol class="first last arabic simple">
-<li>3UTR and CDS regions,</li>
-<li>only 3UTR,</li>
-<li>only 5UTR and</li>
-<li>only CDS.</li>
-</ol>
-</dd>
-</dl>
-<div class="line-block">
+<div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -187,30 +112,81 @@ The file should be tab-separated, with the following structure:</p>
 
 
           </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">fivepseq</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_data.html">Preparing Data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Fivepseq usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#command-line-arguments">Command line arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-arguments">Optional arguments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interpreting_output.html">Output interpretation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="preparing_data.html" title="previous chapter">Preparing Data</a></li>
+      <li>Next: <a href="interpreting_output.html" title="next chapter">Output interpretation</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="interpreting_output.html" title="Output interpretation"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="preparing_data.html" title="Preparing data for fivepseq analysis"
-             >previous</a> |</li>
-        <li><a href="index.html">home</a>|&nbsp;</li>
-        <li><a href="search.html">search</a>|&nbsp;</li>
- 
-      </ul>
+    <div class="footer">
+      &copy;2019, Lilit Nersisyan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/usage_fivepseq.rst.txt"
+          rel="nofollow">Page source</a>
     </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Lilit Nersisyan.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
-    </div>
+
+    
+
+    
   </body>
 </html>

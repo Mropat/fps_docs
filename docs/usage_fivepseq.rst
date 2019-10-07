@@ -5,19 +5,20 @@ Fivepseq usage
 ***************
 
 
-Core command line arguments
+Command line arguments
 ----------------------------------
 
-These are the arguments to be provided::
+These are the arguments to be provided:
+
+.. code-block:: shell
 
     fivepseq \
-    -g path_to_your_genome_fasta \
-    -a path_to_your_annotation_gff (sorry no gtf for now) \
-    -b path_to_one_or_many_bam_files 
-        (multiple files provided with pattern ("parent_dir/*.bam") within brackets) \
-    -o output_directory \
-    -t title_of_the_run \
-    [optional arguments] \
+    -g <path_to_genome_fasta> \
+    -a <path_to_annotation> \
+    -b <path_to_bam_file(s) \  #(multiple files provided with pattern ("parent_dir/*.bam")) 
+    -o <output_directory> \
+    -t <title_of_the_run> \
+    [optional arguments]
 
 
 Optional arguments
@@ -26,7 +27,8 @@ Optional arguments
 **Conflict**
 
 The conflict mode specifies how to deal with files/folders that already exist:
-::
+
+.. code-block:: shell
 
     --conflict
         default: add - only adds missing files to existing directory 
@@ -37,15 +39,15 @@ The conflict mode specifies how to deal with files/folders that already exist:
 
 Set p value threshold for outlier detection: counts with less than the [--op] probability of falling into Poisson distribution will be down-sampled. 
 
-::
+.. code-block:: shell
 
     --op
         default: 0
         -1 - turn off downsampling
 
-Alternatively, set constant threshold for count down-sampling. Instead of outlier detection, values larger than this constant will be down-sampled.
+Alternatively, set constant threshold for read count down-sampling. Instead of outlier detection, values larger than this constant will be down-sampled.
 
-::
+.. code-block:: shell
 
     --ds
         default: None
@@ -56,7 +58,7 @@ Supply a text file with newline-separated list of gene ids you'd like to filter/
 The names should correspond to those present under the gene_id tag in the gff file. 
 Note: only these genes will be used in all the calculations.
 
-::
+.. code-block:: shell
 
     -gf/-genefilter
         default: None
@@ -75,32 +77,12 @@ Note, the gene_attribute is the attribute name in the gtf or gff file.
 In case of gff, the attribute in the cds feature will be considered. 
 With this option, fivepseq will generate a separate plotting directory called genesets, with tabbed-plots to either compare samples for each geneset, or genesets for each sample. The counts folder will also be divided according to the geneset used. The default folder will be named protein_coding.
 
-::
+.. code-block:: shell
 
     -gs/-geneset
         default: None
 |
-**Loci coordinates** (beta)
-
-This option requires a file with coordinates of the loci (e.g. RBP binding coordinates), relative to which, the user wants to generate scatter-plots. 
-The file should be tab-separated, with the following structure: 
-    Columns: chr->str->start->end->symbol 
-    
-    Rows: the chromosome name, strand (+ or -), start and end coordinates and the name of the RBP (or the locus).
-   
-::
-
-    --loci-file
-        default: None
-
-
-Four different output plots will correspond to reads located in:
-    (1) 3UTR and CDS regions, 
-    (2) only 3UTR, 
-    (3) only 5UTR and 
-    (4) only CDS.
-
 |
-
+|
 
     
