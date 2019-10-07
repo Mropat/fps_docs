@@ -13,7 +13,7 @@ Fivepseq integrates a wide range of open-source python libraries in order to per
 
 .. code-block:: shell
 
-  $conda install phantomjs selenium pillow
+  conda install phantomjs selenium pillow
 
 
 
@@ -24,7 +24,7 @@ To download latest fivepseq build, `clone the fivepseq repository <https://githu
 
 .. code-block:: shell
 
-  $git clone https://github.com/lilit-nersisyan/fivepseq.git
+  git clone https://github.com/lilit-nersisyan/fivepseq.git
 
 
 
@@ -46,7 +46,7 @@ Alternatively, when the library is published, it will be possible to install fiv
 
 .. code-block:: shell
 
-  $pip install fivepseq
+  pip install fivepseq
 
 
 
